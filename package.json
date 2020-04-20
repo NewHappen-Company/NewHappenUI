@@ -1,6 +1,6 @@
 {
-  "name": "NewHappen UI",
-  "version": "1.0.1",
+  "name": "newhappen-ui",
+  "version": "1.0.3",
   "author": "NewHappen",
   "main": "dist/index.js",
   "license": "MIT",
