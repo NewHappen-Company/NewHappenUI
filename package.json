@@ -1,7 +1,7 @@
 {
-  "name": "rocketseat-challenge-ui-kit",
+  "name": "NewHappen UI",
   "version": "1.0.1",
-  "author": "Guilherme Rodz",
+  "author": "NewHappen",
   "main": "dist/index.js",
   "license": "MIT",
   "scripts": {
