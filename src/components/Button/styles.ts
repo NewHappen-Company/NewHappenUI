@@ -13,7 +13,7 @@ export const Container = styled.button<Props>`
   text-transform: uppercase;
   font-weight: bold;
 
-  border-radius: 4px;
+  border-radius: 8px;
   border: ${(props) =>
     props.outlined ? `2px solid ${props.backgroundColor}` : 'none'};
 
@@ -30,12 +30,12 @@ export const Container = styled.button<Props>`
     background-color: ${(props) =>
       props.outlined
         ? props.backgroundColor
-        : lighten(0.03, props.backgroundColor as string)};
+        : lighten(0.1, props.backgroundColor as string)};
   }
 
   :active:not(:disabled) {
     box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
     background-color: ${(props) =>
-      darken(0.03, props.backgroundColor as string)};
+      darken(0.1, props.backgroundColor as string)};
   }
 `;

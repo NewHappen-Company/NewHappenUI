@@ -8,7 +8,7 @@ storiesOf('Separator', module).add('Default', () => (
     style={{
       width: '300px',
       padding: '20px 10px',
-      backgroundColor: '#000',
+      backgroundColor: '#FFF',
     }}
   >
     <Separator />

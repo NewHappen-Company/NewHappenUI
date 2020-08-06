@@ -1,21 +1,21 @@
 import { create } from '@storybook/theming';
 
 export default create({
-  base: 'dark',
+  base: 'light',
 
-  colorSecondary: '#FD4935',
+  colorSecondary: '#FF3300',
 
-  appBg: '#08161F',
-  appContentBg: '#0E222F',
-  appBorderColor: '#FD4935',
+  appBg: '#FFF',
+  appContentBg: '#C2C2C2',
+  appBorderColor: '#FF3300',
 
-  textColor: '#fff',
+  textColor: 'rgba(0, 0, 0, .5)',
 
   // Toolbar default and active colors
-  barTextColor: '#E6E6E6',
+  barTextColor: '#000',
   barSelectedColor: '#ffffff',
-  barBg: '#0E222F',
+  barBg: '#E6E6E6',
 
-  brandTitle: 'NewHappen UI',
+  brandTitle: 'Newhappen UI',
   brandUrl: 'https://newhappen.com.br/',
 });

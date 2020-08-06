@@ -22,9 +22,10 @@ export const Modal: React.FC<Props> = ({
   return (
     <FullScreen open={open}>
       <Container {...props} title={title}>
-        <Close onClick={() => setOpen(false)}>X</Close>
-
-        <h2>{title}</h2>
+        <div style={{ display: 'flex', alignItems: 'center', width: '100%', textAlign: 'center' }}>
+          <h2>{title}</h2>
+          <Close onClick={() => setOpen(false)}>X</Close>
+        </div>
 
         {children}
       </Container>

@@ -2,44 +2,42 @@ import styled from 'styled-components';
 
 import { ILabel } from './index';
 
-export const Label = styled.label<ILabel>`
+export const InputNH = styled.label<ILabel>`
+  background-color: ${props => props.grey ? '#EEE' : '#FFF' };
   display: flex;
-  position: relative;
-  margin-bottom: 2rem;
+  align-items: center;
+  border-radius: 8px;
+  padding: ${props => props.grey ? 0 : 18 }px;
 
   > input {
-    background-color: ${(props) => props.light ? '#fff' : '#08161F'};
-    border: 2px solid #040c12;
-    border-radius: 4px;
-
-    padding: 16px;
-    padding-left: ${(props) => (props.icon ? '40px' : '16px')};
-
-    color: ${(props) => props.light ? '#000' : '#fff'};
-    font-size: 16px;
-
-    transition: 180ms ease-in-out;
+    border: 0;
+    width: 85%;
+    color: ${props => props.color ? props.color : 'rgba(0, 0, 0, .9)'};
+    font-size: 15px;
+    background-color: transparent;
+    padding: ${props => props.grey ? 18 : 0 }px;
 
     &::placeholder {
-      color: ${(props) => props.light ? '#c6c6c6' : 'rgba(255, 255, 255, 0.5)'};
+      color: ${props => props.grey ? 'rgba(0, 0, 0, .81)' : '#A8A8A8'};
+      font-weight: ${props => props.grey ? 100 : '700'};
+      font-size: 15px;
     }
+  }
 
-    ~ svg {
-      fill: ${(props) => props.light ? '#c6c6c6' : 'rgba(255, 255, 255, 0.5)'};
-      position: absolute;
-      left: 12px;
-      top: 16px;
-      width: 24px;
-      height: 24px;
-      transition: 180ms ease-in-out;
-    }
+  div {
+    background-color: #00c4db;
+    height: 100%;
+    padding: 18px;
+    border-radius: 8px 0 0 8px;
+  }
 
-    &:focus {
-      border: 2px solid ${(props) => props.color};
+  svg {
+    color: ${props => props.grey ? '#FFF' : '#A8A8A8'};
+    font-size: 25px;
+    cursor: pointer;
+  }
 
-      ~ svg {
-        fill: ${(props) => props.color};
-      }
-    }
+  &:focus-within {
+    border: ${props => props.grey ? 0 : '4px solid #A8A8A8'};
   }
 `;

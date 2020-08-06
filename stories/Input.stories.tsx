@@ -12,47 +12,22 @@ storiesOf('Input', module)
     return (
       <Input
         name="newhappen"
-        placeholder="NewHappen..."
+        placeholder="Placeholder"
         value={inputValue}
         setValue={setInputValue}
+        icon={<MdSearch />}
       />
     );
   })
-  .add('With Icon', () => {
+  .add('Grey', () => {
     const [inputValue, setInputValue] = useState('');
 
     return (
       <Input
+        grey={true}
         name="newhappen"
         icon={<MdSearch />}
-        placeholder="NewHappen..."
-        value={inputValue}
-        setValue={setInputValue}
-      />
-    );
-  })
-  .add('Light Default', () => {
-    const [inputValue, setInputValue] = useState('');
-
-    return (
-      <Input
-        light
-        name="newhappen"
-        placeholder="NewHappen..."
-        value={inputValue}
-        setValue={setInputValue}
-      />
-    );
-  })
-  .add('Light With Icon', () => {
-    const [inputValue, setInputValue] = useState('');
-
-    return (
-      <Input
-        light
-        name="newhappen"
-        icon={<MdSearch />}
-        placeholder="NewHappen..."
+        placeholder="Placeholder"
         value={inputValue}
         setValue={setInputValue}
       />

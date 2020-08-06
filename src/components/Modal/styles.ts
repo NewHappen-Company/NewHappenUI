@@ -33,9 +33,11 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
 
+  max-width: 80%;
+
   padding: 20px;
 
-  background-color: #08161F;
+  background-color: #FFF;
   border-radius: 8px;
 
   animation: slideIn 350ms cubic-bezier(0.42, 0, 0.21, 1) 1;
@@ -54,11 +56,11 @@ export const Container = styled.div`
     }
   }
 
-  color: #c4c4c4;
+  color: rgba(0, 0, 0, .81);
 
   h2 {
-    color: #fff;
-    margin-bottom: 28px;
+    color: rgba(0, 0, 0, .95);
+    margin-bottom: 0;
   }
 `;
 
@@ -66,9 +68,10 @@ export const Close = styled.button`
   cursor: pointer;
   align-self: flex-end;
 
-  margin-bottom: 24px;
+  margin-bottom: 5px;
+  margin-left: auto;
 
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(0, 0, 0, .81);
 
   background: transparent;
   border: 0;
@@ -76,6 +79,6 @@ export const Close = styled.button`
   font-size: 16px;
 
   &:hover {
-    color: #fff;
+    color: rgba(0, 0, 0, .5);
   }
 `;
