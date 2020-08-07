@@ -39,6 +39,8 @@ export const Input: React.FC<Props> = ({
         </div>
       ) }
       <input
+        name={name}
+        type={type}
         value={value}
         placeholder={placeholder}
         onChange={(e) => setValue(e.target.value)}
