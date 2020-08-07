@@ -11,11 +11,13 @@ export interface Props {
   placeholder?: string;
   grey?: boolean;
   icon?: React.ReactNode | React.Component;
+  width?: number; 
 }
 
 export interface ILabel {
   icon?: React.ReactNode | React.Component;
   grey?: boolean;
+  width?: number;
 }
 
 export const Input: React.FC<Props> = ({
@@ -26,10 +28,11 @@ export const Input: React.FC<Props> = ({
   setValue,
   placeholder,
   icon,
-  grey = false
+  grey = false,
+  width
 }) => {
   return (
-    <InputNH grey={grey}>
+    <InputNH grey={grey} width={width}>
       { icon && grey && (
         <div>
           {icon}
