@@ -13,6 +13,8 @@ export const Container = styled.button<Props>`
   text-transform: uppercase;
   font-weight: bold;
 
+  width: ${props => props.width && props.width}px;
+
   border-radius: 8px;
   border: ${(props) =>
     props.outlined ? `2px solid ${props.backgroundColor}` : 'none'};

@@ -8,6 +8,7 @@ export interface Props {
   outlined?: boolean;
   onClick?: () => void;
   disabled?: boolean;
+  width?: number;
 }
 
 const ButtonWrapper: React.FC<Props> = ({
@@ -15,10 +16,12 @@ const ButtonWrapper: React.FC<Props> = ({
   backgroundColor = '#FF3300',
   color = '#fff',
   outlined = false,
+  width,
   ...props
 }) => {
   return (
     <Container
+      width={width}
       backgroundColor={backgroundColor}
       color={color}
       outlined={outlined}
