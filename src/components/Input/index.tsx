@@ -12,7 +12,7 @@ export interface Props {
   grey?: boolean;
   icon?: React.ReactNode | React.Component;
   width?: number; 
-  onClick?: () => void;
+  onClick?: () => any;
 }
 
 export interface ILabel {
@@ -36,7 +36,7 @@ export const Input: React.FC<Props> = ({
   return (
     <InputNH grey={grey} width={width}>
       { icon && grey && (
-        <div onClick={onClick}>
+        <div>
           {icon}
         </div>
       ) }
@@ -47,7 +47,11 @@ export const Input: React.FC<Props> = ({
         placeholder={placeholder}
         onChange={(e) => setValue(e.target.value)}
       />
-      { icon && !grey && icon }
+      { icon && !grey && (
+        <div onClick={onClick}>
+          {icon}
+        </div>
+      ) }
     </InputNH>
   );
 };

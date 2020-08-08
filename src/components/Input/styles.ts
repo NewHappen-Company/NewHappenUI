@@ -31,16 +31,16 @@ export const InputNH = styled.div<ILabel>`
   }
 
   div {
-    background-color: #00c4db;
+    background-color: ${props => props.grey ? '#00c4db' : 'transparent'};
     height: 100%;
-    padding: 18px;
+    padding: ${props => props.grey ? 18 : 'auto'}px;
     border-radius: 8px 0 0 8px;
+    margin-left: ${props => props.grey ? 0 : 'auto'};
   }
 
   svg {
     color: ${props => props.grey ? '#FFF' : '#A8A8A8'};
     font-size: 25px;
     cursor: pointer;
-    margin-left: ${props => props.grey ? 0 : 'auto'};
   }
 `;

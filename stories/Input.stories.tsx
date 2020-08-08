@@ -16,6 +16,7 @@ storiesOf('Input', module)
         value={inputValue}
         setValue={setInputValue}
         icon={<MdSearch />}
+        onClick={() => console.log('Clicked!')}
       />
     );
   })
@@ -30,6 +31,7 @@ storiesOf('Input', module)
         placeholder="Placeholder"
         value={inputValue}
         setValue={setInputValue}
+        onClick={() => console.log('Clicked!')}
       />
     );
   });
