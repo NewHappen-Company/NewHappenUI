@@ -1,6 +1,6 @@
 {
   "name": "newhappen-ui",
-  "version": "1.1.6",
+  "version": "1.1.8",
   "author": "Newhappen",
   "main": "dist/index.js",
   "license": "MIT",

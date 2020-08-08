@@ -12,6 +12,7 @@ export interface Props {
   grey?: boolean;
   icon?: React.ReactNode | React.Component;
   width?: number; 
+  onClick?: () => void;
 }
 
 export interface ILabel {
@@ -29,12 +30,13 @@ export const Input: React.FC<Props> = ({
   placeholder,
   icon,
   grey = false,
-  width
+  width,
+  onClick
 }) => {
   return (
     <InputNH grey={grey} width={width}>
       { icon && grey && (
-        <div>
+        <div onClick={onClick}>
           {icon}
         </div>
       ) }
