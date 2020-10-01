@@ -23,7 +23,7 @@ export const Modal: React.FC<Props> = ({
     <FullScreen open={open}>
       <Container {...props} title={title}>
         <div style={{ display: 'flex', alignItems: 'center', width: '100%', textAlign: 'center' }}>
-          <h2>{title}</h2>
+          <h2 style={{ width: '100%', textAlign: 'center' }}>{title}</h2>
           <Close onClick={() => setOpen(false)}>X</Close>
         </div>
 
